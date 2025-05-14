@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* card-shadow: 0 1px 3px rgba(0,0,0,0.05) */
+/* modal-shadow: 0 4px 12px rgba(0,0,0,0.1) */
+@theme {
+  --color-icon: #6b7280;
+  --color-icon-hover: #111827;
+
+  --color-bg: #f9fafb;
+  --color-card: #ffffff;
+  --color-navbar: #f3f4f6;
+  --color-divider: #e5e7eb;
+
+  --color-txt-primary: #111827;
+  --color-txt-secondary: #4b5563;
+  --color-txt-disabled: #9ca3af;
+  --color-txt-link: #2563eb;
+  --color-txt-link-hover: #1d4ed8;
+
+  --color-input-bg: #ffffff;
+  --color-input-border: #d1d5db;
+  --color-placeholder: #9ca3af;
+  --color-focus: #3b82f6;
+  --color-input-error: #ef4444;
+  --color-input-success: #10b981;
+
+  --color-btn-primary-bg: #3b82f6;
+  --color-btn-primary-bg-hover: #2563eb;
+  --color-btn-text: #ffffff;
+
+  --color-btn-secondary-bg: #e5e7eb;
+  --color-btn-secondary-bg-hover: #d1d5db;
+  --color-btn-secondary-text: #111827;
+
+  --color-btn-success-bg: #10b981;
+  --color-btn-success-bg-hover: #059669;
+
+  --color-btn-danger-bg: #ef4444;
+  --color-btn-danger-bg-hover: #dc2626;
+
+  --color-btn-warning-bg: #facc15;
+  --color-btn-warning-bg-hover: #eab308;
+
+  --color-btn-disabled-bg: #e5e7eb;
+  --color-btn-disabled-text: #9ca3af;
+
+  --color-state-approvated-bg: #d1fae5;
+  --color-state-approvated-text: #065f46;
+
+  --color-state-rejected-bg: #fecaca;
+  --color-state-rejected-text: #991b1b;
+
+  --color-state-pending-bg: #fef3c7;
+  --color-state-pending-text: #92400e;
+
+  --color-state-review-bg: #dbeafe;
+  --color-state-review-text: #1e40af;
+
+  /* dark */
+
+  --color-icon-dark: #9ca3af;
+  --color-icon-hover-dark: #e5e7eb;
+
+  --color-bg-dark: #111827;
+  --color-card-dark: #1f2937;
+  --color-navbar-dark: #1e293b;
+  --color-divider-dark: #374151;
+
+  --color-txt-primary-dark: #f9fafb;
+  --color-txt-secondary-dark: #d1d5db;
+  --color-txt-disabled-dark: #6b7280;
+  --color-txt-link-dark: #60a5fa;
+  --color-txt-link-hover-dark: #3b82f6;
+
+  --color-input-bg-dark: #1f2937;
+  --color-input-border-dark: #374151;
+  --color-placeholder-dark: #6b7280;
+  --color-focus-dark: #3b82f6;
+  --color-input-error-dark: #f87171;
+  --color-input-success-dark: #6ee7b7;
+
+  --color-btn-text-dark: #ffffff;
+
+  --color-btn-secondary-bg-dark: #374151;
+  --color-btn-secondary-bg-hover-dark: #4b5563;
+  --color-btn-secondary-text-dark: #f9fafb;
+
+  --color-btn-warning-bg-dark: #fbbf24;
+  --color-btn-warning-bg-hover-dark: #f59e0b;
+  --color-btn-warning-text-dark: #ffffff;
+
+  --color-btn-disabled-bg-dark: #1f2937;
+  --color-btn-disabled-text-dark: #6b7280;
+
+  --color-state-approvated-bg-dark: #064e3b;
+  --color-state-approvated-text-dark: #6ee7b7;
+
+  --color-state-rejected-bg-dark: #7f1d1d;
+  --color-state-rejected-text-dark: #f87171;
+
+  --color-state-pending-bg-dark: #78350f;
+  --color-state-pending-text-dark: #fcd34d;
+
+  --color-state-review-bg-dark: #1e3a8a;
+  --color-state-review-text-dark: #93c5fd;
+}
+
+:root {
+  @apply text-txt-primary bg-bg;
+}
