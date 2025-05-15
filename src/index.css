@@ -105,6 +105,14 @@
   --color-state-review-text-dark: #93c5fd;
 }
 
-:root {
+/* :root {
   @apply text-txt-primary bg-bg;
+} */
+
+body {
+  @apply text-txt-primary bg-bg md:p-7;
+}
+
+.modal {
+  @apply flex flex-col md:flex-row  md:rounded-lg min-h-[calc(100vh-56px)] bg-card shadow-lg;
 }
