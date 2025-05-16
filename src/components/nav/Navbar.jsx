@@ -1,3 +1,5 @@
+import NavItems from "./NavItems";
+const role = "user";
 export default function Navbar({ children }) {
   return (
     <header className="bg-navbar md:w-1/4 md:pl-4 border-b-2 md:border-r-2 border-divider md:border-b-0 md:rounded-l-lg">
@@ -6,7 +8,30 @@ export default function Navbar({ children }) {
         <h1 className="text-xl font-bold">Approval Management</h1>
       </div>
       <nav>
-        <ol className="flex md:flex-col justify-around">{children}</ol>
+        <ol className="flex md:flex-col justify-around">
+          {role !== "admin" && (
+            <>
+              <NavItems name="submitRequest" text="Submit request" />
+              <NavItems name="myRequests" text="My request" />
+            </>
+          )}
+          {role === "supervisor" && (
+            <>
+              <NavItems name="pendingRequests" text="Pending request" />
+              <NavItems name="approvedRequests" text="Approved request" />
+              <NavItems name="rejectedRequests" text="Rejected request" />
+            </>
+          )}
+          {role === "admin" && (
+            <>
+              <NavItems name="users" text="Users" />
+              <NavItems name="auditLog" text="Audit log" />
+            </>
+          )}
+
+          <NavItems name="settings" text="Settings" />
+          <NavItems name="logout" text="Logout" />
+        </ol>
       </nav>
     </header>
   );
