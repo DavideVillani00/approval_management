@@ -5,7 +5,7 @@ export default function LayoutPage() {
   return (
     <div className="modal">
       <Navbar />
-      <main className="place-self-center">
+      <main className="w-full h-full p-4 md:place-content-center">
         <Outlet />
       </main>
     </div>

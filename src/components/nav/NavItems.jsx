@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 export default function NavItems({ text, /* onClick, */ name }) {
   return (
-    <li
-      name={name}
-      className="p-3 rounded-s hover:bg-divider w-full text-center md:text-left"
+    <Link
+      to={`/${name}`}
+      className=" rounded-s hover:bg-divider h-full md:w-full text-center md:text-left"
     >
-      <Link to={`/${name}`}>{text}</Link>
-    </li>
+      <li name={name} className="p-3 h-full">
+        {text}
+      </li>
+    </Link>
   );
 }

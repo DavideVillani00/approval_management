@@ -114,5 +114,9 @@ body {
 }
 
 .modal {
-  @apply flex flex-col md:flex-row  md:rounded-lg min-h-[calc(100vh-56px)] bg-card shadow-lg;
+  @apply flex flex-col md:flex-row  md:rounded-lg md:h-[calc(100vh-56px)] h-screen bg-card shadow-lg;
+}
+
+h1 {
+  @apply text-3xl font-bold text-txt-primary;
 }
