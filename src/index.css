@@ -120,3 +120,11 @@ body {
 h1 {
   @apply text-3xl font-bold text-txt-primary;
 }
+
+h3 {
+  @apply text-lg font-bold text-txt-primary;
+}
+
+.primaryBtn {
+  @apply text-btn-text bg-btn-primary-bg hover:bg-btn-primary-bg-hover rounded-md px-7 py-2 shadow-lg;
+}

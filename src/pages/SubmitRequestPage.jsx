@@ -16,10 +16,7 @@ export default function SubmitRequestPage() {
           label="Description"
           placeholder="Insert a description"
         />
-        <button
-          type="submit"
-          className="text-btn-text bg-btn-primary-bg hover:bg-btn-primary-bg-hover rounded-md px-7 py-2 float-end"
-        >
+        <button type="submit" className="primaryBtn float-end">
           Submit
         </button>
       </form>

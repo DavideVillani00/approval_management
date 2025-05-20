@@ -10,7 +10,7 @@ export default function Input({ type, label, name, placeholder }) {
           name={name}
           placeholder={placeholder}
           rows={5}
-          className="p-2 border-[1px] border-input-border rounded-md focus:outline-focus"
+          className="p-2 border-[1px] border-input-border rounded-md focus:outline-focus shadow-lg"
         />
       ) : (
         <input
@@ -18,7 +18,7 @@ export default function Input({ type, label, name, placeholder }) {
           id={name}
           name={name}
           placeholder={placeholder}
-          className="p-2 border-[1px] border-input-border rounded-md focus:outline-focus"
+          className="p-2 border-[1px] border-input-border rounded-md focus:outline-focus shadow-lg"
         />
       )}
     </div>
