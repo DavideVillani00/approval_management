@@ -1,5 +1,5 @@
 import NavItems from "./NavItems";
-const role = "user";
+const role = "supervisor";
 export default function Navbar({ children }) {
   return (
     <header className="bg-navbar md:w-2/5 lg:w-1/4  border-b-2 md:border-r-2 border-divider md:border-b-0 md:rounded-l-lg">
@@ -8,7 +8,7 @@ export default function Navbar({ children }) {
         <h1 className="text-xl font-bold ">Approval Management</h1>
       </div>
       <nav>
-        <ol className="flex md:flex-col justify-evenly items-center md:pl-4 ">
+        <ol className="flex md:flex-col flex-wrap justify-evenly items-center md:pl-4 ">
           {role !== "admin" && (
             <>
               <NavItems name="submitRequest" text="Submit request" />

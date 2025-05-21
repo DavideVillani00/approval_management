@@ -21,7 +21,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <LayoutPage />,
     children: [
-      { path: "/", element: <h1>Select a section</h1> },
+      {
+        path: "/",
+        element: <h1 className=" text-center">Select a section</h1>,
+      },
       { path: "/submitRequest", element: <SubmitRequestPage /> },
       { path: "/myRequests", element: <MyRequestsPage /> },
       { path: "/pendingRequests", element: <PendingRequestsPage /> },

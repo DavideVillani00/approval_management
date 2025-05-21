@@ -128,3 +128,6 @@ h3 {
 .primaryBtn {
   @apply text-btn-text bg-btn-primary-bg hover:bg-btn-primary-bg-hover rounded-md px-7 py-2 shadow-lg;
 }
+.dangerBtn {
+  @apply text-btn-text bg-btn-danger-bg hover:bg-btn-danger-bg-hover rounded-md px-7 py-2 shadow-lg;
+}
