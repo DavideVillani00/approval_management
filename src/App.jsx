@@ -3,13 +3,13 @@ import LayoutPage from "./layouts/LayoutPage.jsx";
 
 import SubmitRequestPage from "./pages/SubmitRequestPage.jsx";
 import MyRequestsPage from "./pages/MyRequestsPage.jsx";
-import PendingRequestsPage from "./pages/supervisor/PendingRequestsPage.jsx";
-import RejectedRequestsPage from "./pages/supervisor/RejectedRequestsPage.jsx";
-import ApprovedRequestsPage from "./pages/supervisor/ApprovedRequestsPage.jsx";
+import ManageRequestsPage from "./pages/supervisor/ManageRequestsPage.jsx";
+
 import UsersPage from "./pages/admin/UsersPage.jsx";
 import AuditLogPage from "./pages/admin/AuditLogPage.jsx";
 import SettingsPage from "./pages/SettingsPage.jsx";
 import LogoutPage from "./pages/LogoutPage.jsx";
+import RequestCardExpanded from "./components/RequestCardExpanded.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,13 +27,12 @@ const router = createBrowserRouter([
       },
       { path: "/submitRequest", element: <SubmitRequestPage /> },
       { path: "/myRequests", element: <MyRequestsPage /> },
-      { path: "/pendingRequests", element: <PendingRequestsPage /> },
-      { path: "/rejectedRequests", element: <RejectedRequestsPage /> },
       { path: "/users", element: <UsersPage /> },
       { path: "/auditLog", element: <AuditLogPage /> },
       { path: "/settings", element: <SettingsPage /> },
       { path: "/logout", element: <LogoutPage /> },
-      { path: "/approvedRequests", element: <ApprovedRequestsPage /> },
+      { path: "/manageRequest", element: <ManageRequestsPage /> },
+      { path: "/requestExtended", element: <RequestCardExpanded /> },
     ],
   },
 ]);

@@ -118,16 +118,31 @@ body {
 }
 
 h1 {
-  @apply text-3xl font-bold text-txt-primary;
+  @apply text-3xl font-bold;
 }
 
 h3 {
   @apply text-lg font-bold text-txt-primary;
 }
 
+tr {
+  @apply border-[1px] border-divider;
+}
+th,
+td {
+  @apply p-2;
+}
+
+button {
+  @apply rounded-md px-7 py-2 shadow-lg;
+}
+
 .primaryBtn {
-  @apply text-btn-text bg-btn-primary-bg hover:bg-btn-primary-bg-hover rounded-md px-7 py-2 shadow-lg;
+  @apply text-btn-text bg-btn-primary-bg hover:bg-btn-primary-bg-hover;
 }
 .dangerBtn {
-  @apply text-btn-text bg-btn-danger-bg hover:bg-btn-danger-bg-hover rounded-md px-7 py-2 shadow-lg;
+  @apply text-btn-text bg-btn-danger-bg hover:bg-btn-danger-bg-hover;
+}
+.warningBtn {
+  @apply text-btn-secondary-text bg-btn-secondary-bg hover:bg-btn-secondary-bg-hover;
 }

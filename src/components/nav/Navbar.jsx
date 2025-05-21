@@ -1,5 +1,5 @@
 import NavItems from "./NavItems";
-const role = "supervisor";
+const role = "admin";
 export default function Navbar({ children }) {
   return (
     <header className="bg-navbar md:w-2/5 lg:w-1/4  border-b-2 md:border-r-2 border-divider md:border-b-0 md:rounded-l-lg">
@@ -17,9 +17,7 @@ export default function Navbar({ children }) {
           )}
           {role === "supervisor" && (
             <>
-              <NavItems name="pendingRequests" text="Pending request" />
-              <NavItems name="approvedRequests" text="Approved request" />
-              <NavItems name="rejectedRequests" text="Rejected request" />
+              <NavItems name="manageRequest" text="Manage request" />
             </>
           )}
           {role === "admin" && (
