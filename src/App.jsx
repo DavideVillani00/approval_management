@@ -10,13 +10,15 @@ import AuditLogPage from "./pages/admin/AuditLogPage.jsx";
 import SettingsPage from "./pages/SettingsPage.jsx";
 import LogoutPage from "./pages/LogoutPage.jsx";
 import RequestCardExpanded from "./components/RequestCardExpanded.jsx";
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "signup",
-    element: <h1>Sign up</h1>,
+    path: "/signup",
+    element: <Signup />,
   },
-  { path: "login", element: <h1>Login</h1> },
+  { path: "/login", element: <Login /> },
   {
     path: "/",
     element: <LayoutPage />,

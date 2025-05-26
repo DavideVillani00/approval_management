@@ -1,7 +1,13 @@
-export default function Input({ type, label, name, placeholder }) {
+export default function Input({
+  type,
+  label,
+  name,
+  placeholder,
+  className = "",
+}) {
   return (
-    <div className="flex flex-col mb-4">
-      <label htmlFor={name} className="font-bold text-lg">
+    <div className={`flex flex-col mb-4 ${className}`}>
+      <label htmlFor={name} className="font-medium text-lg">
         {label}
       </label>
       {type === "textarea" ? (
